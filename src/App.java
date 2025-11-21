@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {  
         Scanner input = new Scanner(System.in); 
         System.out.println("=================================================="); 
-        System.out.println("        Week 1 Project - Bank Application"); 
+        System.out.println("        Project - Bank Application"); 
         System.out.println("        Author: Angelo Burke"); 
         System.out.println("==================================================\n"); 
         // Welcome message 
