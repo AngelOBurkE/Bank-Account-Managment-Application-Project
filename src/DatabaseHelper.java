@@ -124,7 +124,9 @@ public class DatabaseHelper {
 
   
 
-            if (account instanceof CheckingAccount ca) { 
+            if (account instanceof CheckingAccount) { 
+
+                CheckingAccount ca = (CheckingAccount) account; 
 
                 ps.setString(4, "CHECKING"); 
 
@@ -134,7 +136,9 @@ public class DatabaseHelper {
 
                 ps.setNull(7, Types.REAL); 
 
-            } else if (account instanceof SavingsAccount sa) { 
+            } else if (account instanceof SavingsAccount) { 
+
+                SavingsAccount sa = (SavingsAccount) account; 
 
                 ps.setString(4, "SAVINGS"); 
 
@@ -294,7 +298,9 @@ public class DatabaseHelper {
 
   
 
-                    if (acc instanceof CheckingAccount ca) { 
+                    if (acc instanceof CheckingAccount) { 
+
+                        CheckingAccount ca = (CheckingAccount) acc; 
 
                         ps.setString(4, "CHECKING"); 
 
@@ -304,7 +310,9 @@ public class DatabaseHelper {
 
                         ps.setNull(7, Types.REAL); 
 
-                    } else if (acc instanceof SavingsAccount sa) { 
+                    } else if (acc instanceof SavingsAccount) { 
+
+                        SavingsAccount sa = (SavingsAccount) acc; 
 
                         ps.setString(4, "SAVINGS"); 
 
@@ -381,5 +389,3 @@ public class DatabaseHelper {
     } 
 
 } 
-
- 
