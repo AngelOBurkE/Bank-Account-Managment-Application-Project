@@ -1,7 +1,7 @@
 /* 
 * Name: Angelo Burke  
 * Date: Dec 8, 2025   
-* Assignment: Week 3 Bank Account Management Application Project 
+* Assignment: Week 3 Bank Account Management Application Project. 
 */ 
   
 public class CheckingAccount extends BankAccount { 
